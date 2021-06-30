@@ -12,7 +12,7 @@ function NavBar() {
             <img src={logo} alt="Garantías Chilecompra" />
         </Navbar.Brand>
         <Navbar.Toggle aría-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='Basic-navbar-nav-md'>
+        <Navbar.Collapse id='Basic-navbar-nav-sm'>
             <Nav className='menu m-auto'>
                 <Nav.Item><Nav.Link href='/'>Inicio</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href='/about'>Quiénes Somos</Nav.Link></Nav.Item>
