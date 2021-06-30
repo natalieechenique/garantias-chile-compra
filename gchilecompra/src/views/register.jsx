@@ -1,12 +1,12 @@
 import React from 'react';
 
-
-function About () {
+function Register () {
     return (
+
         <div className='container'>
-            <h1>HOLA ABOUT</h1>
+            <h1>Registrarse</h1>
         </div>
     )
 }
 
-export default About;
+export default Register;

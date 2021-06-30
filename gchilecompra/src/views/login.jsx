@@ -1,12 +1,10 @@
 import React from 'react';
 
-
-function About () {
+function Login () {
     return (
         <div className='container'>
-            <h1>HOLA ABOUT</h1>
+            <h1>Ingresar</h1>
         </div>
     )
 }
-
-export default About;
+export default Login;

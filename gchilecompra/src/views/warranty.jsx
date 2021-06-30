@@ -1,12 +1,12 @@
 import React from 'react';
 
-
-function About () {
+function Warranty () {
     return (
+
         <div className='container'>
-            <h1>HOLA ABOUT</h1>
+            <h1>Verificar Garantía</h1>
         </div>
     )
 }
 
-export default About;
+export default Warranty;

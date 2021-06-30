@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-function About () {
+function Bidding () {
     return (
         <div className='container'>
-            <h1>HOLA ABOUT</h1>
+            <h1>Licitaciones</h1>
         </div>
     )
 }
 
-export default About;
+export default Bidding;

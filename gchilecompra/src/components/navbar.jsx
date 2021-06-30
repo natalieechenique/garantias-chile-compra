@@ -1,52 +1,32 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap';
-import styled from 'styled-components';
+import logo from '../images/logo.png';
+import '../styles/navbar.scss';
 
+function NavBar() {
 
-
-function NavBar () {
-
-    const Styles = styled.div`
-    position: sticky;
-    top: 0px;
-    .navbar {
-       background-color: #72BAEC; 
-    }
-    .mobile-navbar {
-    
-        @media (max-width: 768px) {
-            display: grid; 
-            grid-template-columns: 1fr 70px;
-          }
-    
-    }
-    .navbar-brand, .navbar-nav .nav-link {
-    color: white;
-    
-    &:hover {
-        color: black;
-      }
-    
-     }
-    `;
-    
-    
     return (
 
-        <Styles>
-        <Navbar expand='lg' className="mobile-navbar">
+        <Navbar expand='md' className="mobile-navbar-center">
         <Navbar.Brand href='/'>
-            {/* <img src={logo} alt="Garantías Chilecompra" width='80px' /> */}
+            <img src={logo} alt="Garantías Chilecompra" />
         </Navbar.Brand>
         <Navbar.Toggle aría-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='Basic-navbar-nav'>
-            <Nav className='ml-auto'>
+        <Navbar.Collapse id='Basic-navbar-nav-md'>
+            <Nav className='menu m-auto'>
                 <Nav.Item><Nav.Link href='/'>Inicio</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href='/About'>Nosotros</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href='/about'>Quiénes Somos</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href='/bidding'>Licitaciones</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href='/warranty'>Verificar Garantía</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href='/Contact'>Contacto</Nav.Link></Nav.Item>
+                </Nav>
+            <Nav className='btn-group m-auto'>
+                <Nav.Item><Nav.Link href='/login'><button className='btn'>Ingresar</button></Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href='/Register'><button className='btn'>Registrarse</button></Nav.Link></Nav.Item>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
-    // </Styles>
+
     );
 }
 
