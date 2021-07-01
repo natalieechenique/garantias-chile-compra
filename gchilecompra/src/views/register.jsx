@@ -1,10 +1,12 @@
 import React from 'react';
+import RegisterForm from '../components/registerForm';
+import '../styles/register.scss';
 
 function Register () {
     return (
 
-        <div className='container'>
-            <h1>Registrarse</h1>
+        <div className='register container'>
+            <RegisterForm />
         </div>
     )
 }
