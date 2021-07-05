@@ -10,7 +10,9 @@ import Warranty from "../views/warranty.jsx";
 import Contact from  "../views/contact.jsx";
 
 import Register from "../views/register.jsx";
-import Login from  "../views/login.jsx";
+// import Login from  "../views/login.jsx";
+import Welcome from  "../views/welcome.jsx";
+import Api from  "../views/api.jsx";
 
 function AppRouter () {
  return (
@@ -24,7 +26,11 @@ function AppRouter () {
           <Route path='/warranty' component= {Warranty} />
           <Route path='/contact' component= {Contact} />
           <Route path='/register' component= {Register} />
-          <Route path='/login' component= {Login} />
+          {/* <Route path='/login' component= {Login} /> */}
+        
+          <Route path='/welcome' component= {Welcome} />
+          <Route path='/api' component= {Api} />
+      
           <Route exact path="/" component={Home} />
         </Switch>
     </Router>

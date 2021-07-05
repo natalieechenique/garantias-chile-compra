@@ -18,7 +18,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     min-height: 500px;
     background: $bg-color;
     padding:30px;
@@ -34,19 +34,15 @@
 
    label {
    font-size: 14px;
+   text-align: left;
 }
 
    input.form-control  {
           border-radius: 5px;
           background: $light-color;
-          font-size: 14px; 
-          padding-left: 40px;
-          padding-right: 40px;
+          font-size: 14px;
           margin: 0px;
-
         }
-
-    
 
     .user {
         display: inline;
@@ -59,14 +55,10 @@
         background: $secondary-color;
         color: $bg-color;
         margin: 10px;
-
     }
 
-
-    .btn3  {
-    border-radius:50px;
-    }
 }
 
-
-
+.btn.send {
+z-index: 80;
+}

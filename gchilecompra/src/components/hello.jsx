@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
 
-const Saludo = (props) => {
+const Hello = (props) => {
     console.log(props)
+
     return (
+        
      <Fragment>
          <h2>Hola {props.persona}</h2>  
      </Fragment>
@@ -10,4 +12,4 @@ const Saludo = (props) => {
     );
 }
 
-export default Saludo;
+export default Hello;

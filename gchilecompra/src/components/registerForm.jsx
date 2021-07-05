@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { useForm } from "react-hook-form";
 import user from '../images/user.png';
 
+
 function FormHook () {
 
     const {register, handleSubmit, formState: { errors }} = useForm();
@@ -20,7 +21,8 @@ function FormHook () {
         e.target.reset();
     }
     
-    return(
+    
+    return (
 
         <Fragment>
             <form onSubmit={handleSubmit(onSubmit)} className='form'>
@@ -29,7 +31,7 @@ function FormHook () {
                 <h3>Registro de usuario <img src={user} alt='Usuario' width='30px' /></h3>
                 </div>
 
-                <label>Nombre completo 
+                <label>Nombre completo</label>
                 <input
                     className="form-control my-2"
                     name="name"
@@ -42,7 +44,7 @@ function FormHook () {
                     })
                 }   
                 />
-                 </label>
+           
                 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -51,7 +53,7 @@ function FormHook () {
                 </span>
                
 
-                <label>Rut
+                <label>Rut</label>
                 <input
                 className="form-control my-2"
                 name="rut"
@@ -65,8 +67,7 @@ function FormHook () {
 
                     })
                 }   
-                />
-                </label>    
+                /> 
 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -75,7 +76,7 @@ function FormHook () {
                 </span>
 
 
-                <label>Email
+                <label>Email</label>
                 <input
                 className="form-control my-2"
                 name="email"
@@ -88,7 +89,7 @@ function FormHook () {
                     })
                 }   
                 />
-                </label>
+           
 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -97,7 +98,7 @@ function FormHook () {
                 </span>
 
 
-                <label>Telèfono
+                <label>Telèfono</label>
                 <input
                 className="form-control my-2"
                 name="phone"
@@ -111,7 +112,7 @@ function FormHook () {
                     })
                 }   
                 />
-                </label>
+
 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -121,7 +122,7 @@ function FormHook () {
 
 
 
-                <label>Crear contraseña
+                <label>Crear contraseña</label>
                 <input
                 className="form-control my-2"
                 name="password"
@@ -135,7 +136,7 @@ function FormHook () {
                     })
                 }   
                 />
-                </label>
+               
                 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -144,7 +145,7 @@ function FormHook () {
                 </span>
 
 
-                <label>Repetir contraseña
+                <label>Repetir contraseña</label>
                 <input
                 className="form-control my-2"
                 name="repassword"
@@ -160,8 +161,6 @@ function FormHook () {
                 }   
                 />
 
-         
-                </label>
 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -169,7 +168,7 @@ function FormHook () {
                     {errors.repassword && errors.repassword.message}
                 </span>
                 
-            <button className="btn">Registrarse</button>
+            <button className="btn send">Enviar</button>
             <br/>
               <div>
                 <div> 
@@ -182,8 +181,7 @@ function FormHook () {
                 </div>
 
             </form>
-
-           
+            
                 <ul>
                 {
                 Entradas.map(item =>

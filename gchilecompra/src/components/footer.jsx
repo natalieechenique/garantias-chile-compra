@@ -1,6 +1,6 @@
 import React from 'react';
  import '../styles/footer.scss';
- import whitee from '../images/whitee.PNG';
+ import logowhite from '../images/logowhite.png';
 
 
 function Footer() {
@@ -42,7 +42,7 @@ return (
         <div className="col-xs-4 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
           {/* <!-- LOGO INGE--> */}
           <span className="text-uppercase fw-bold mb-2">
-          <img src={whitee} alt='Logo' className='logo-white' width='100px'/>
+          <img src={logowhite} alt='Logo' className='logo-white' width='200px'/>
           </span>
           </div>
         {/* <!-- Grid column --> */}
