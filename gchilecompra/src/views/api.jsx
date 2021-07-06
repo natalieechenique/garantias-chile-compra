@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 function Api () {
@@ -11,7 +11,7 @@ function Api () {
 
 // Llamamos a set equipo, es decir llamamos a todo el array datos
 // Agregamos [] para quitar el bucle infinito que se genera
-useEffect(() => {
+React.useEffect(() => {
   obtenerDatos()
 }, [])
 

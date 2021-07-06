@@ -13,6 +13,7 @@ import Register from "../views/register.jsx";
 // import Login from  "../views/login.jsx";
 import Welcome from  "../views/welcome.jsx";
 import Api from  "../views/api.jsx";
+import PruebaApi from  "../components/pruebaApi.jsx";
 
 function AppRouter () {
  return (
@@ -30,7 +31,13 @@ function AppRouter () {
         
           <Route path='/welcome' component= {Welcome} />
           <Route path='/api' component= {Api} />
-      
+         
+          {/* Nos pintará el componente PruebaApi */}
+          <Route path='/api:id' component= {PruebaApi} />
+          {/* <PruebaApi /> */}
+
+          {/* Ruta dentro de api, id es una variable, pùede ser otro nombre */}
+        
           <Route exact path="/" component={Home} />
         </Switch>
     </Router>
