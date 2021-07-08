@@ -19,7 +19,7 @@ function NavBar() {
       
     return (
 
-        <Navbar expand='md' className="mobile-navbar-center">
+        <Navbar expand='md' className="mobile-navbar-center m">
         <Navbar.Brand href='/'>
         <img src={logo} alt="Garantías Chilecompra" />
         </Navbar.Brand>

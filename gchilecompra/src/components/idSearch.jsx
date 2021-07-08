@@ -6,7 +6,7 @@ function IdSearch() {
 
     return (
 
-            <div className='search col-sm-12 col-md-12 col-lg-12-center'>
+            <div className='search col-sm-12 col-md-12 col-lg-12 m-0 auto center'>
 
                 <span className='search1 '>
                     <h6>Si no sabes el ID <br></br><strong>De tu licitación:</strong></h6>
