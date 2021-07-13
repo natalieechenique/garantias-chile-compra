@@ -1,0 +1,25 @@
+
+
+
+.avatar-img {
+  display: flex;
+  justify-content: center;
+
+    float: center;
+  }
+  
+
+  .about {
+      text-align: center;
+
+      & h2 {
+          color: #304F97;
+      }
+  }
+
+  .linkedin {
+      display: flex;
+      justify-content: right;
+  }
+
+

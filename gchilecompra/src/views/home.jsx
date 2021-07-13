@@ -3,7 +3,27 @@ import home from '../images/home.PNG';
 import illustration1 from '../images/illustration1.png';
 import illustration2 from '../images/illustration2.png';
 import illustration3 from '../images/illustration3.png';
+import illustration4 from '../images/illustration4.png';
 import bg2 from '../images/bg2.png';
+
+import empresa1 from '../images/empresa1.png';
+import empresa2 from '../images/empresa2.png';
+import empresa3 from '../images/empresa3.png';
+import empresa4 from '../images/empresa4.png';
+import empresa5 from '../images/empresa5.png';
+import empresa6 from '../images/empresa6.png';
+import empresa7 from '../images/empresa7.png';
+
+import icon1 from '../images/icon1.png';
+import icon2 from '../images/icon2.png';
+import icon3 from '../images/icon3.png';
+
+import iconbook from '../images/iconbook.png';
+import iconsecurity from '../images/iconsecurity.png';
+
+
+
+
 import '../styles/home.scss';
 import IDSearch from '../components/idSearch'
 
@@ -85,75 +105,157 @@ function Home () {
        
 
           <div className='safe container'>
-          <h2>Hemos respaldado más de 70.000 Garantías</h2>
-          <div className='safe-text container'>
+          <h3>Hemos respaldado más de 70.000 Garantías</h3>
+          <div className='safe-text container align-items-center h-100 justify-content-center'>
           <div className='row'>
-            <div className='col-12'>
-          <h5>Con nosotros puedes sentirte seguro</h5>
+            <div className='col-12 align-items-center h-100 justify-content-center'>
+          <h5 className= ''>Con nosotros puedes sentirte seguro</h5>
           </div>
           </div>
           </div>
         </div>
        
-
-        <div className='safe container'>
-          <h2>Tu proyecto respaldado</h2>
-          <div className='safe-text container'>
+        {/* Background3 */}
+        <div className='bg4-container container-fluid mt-5'>
+        
+        <div className='safe'>
+          <h3>Tu proyecto respaldado</h3>
+          <div className='safe-text'>
           <div className='row'>
-            <div className='col-12'>
-          <h5>imgs</h5>
+            <div className='col-12 d-flex'>
+          <div className='empresas'>
+          <img src={empresa1} alt="Empresa 1" className='empresa p-3'/>
+          <img src={empresa2} alt="Empresa 2" className='empresa p-3' />
+          <img src={empresa3} alt="Empresa 3" className='empresa p-3' />
+          <img src={empresa4} alt="Empresa 4" className='empresa p-3' />
+          <img src={empresa5} alt="Empresa 5" className='empresa p-3' />
+          <img src={empresa6} alt="Empresa 6" className='empresa6 p-3' />
+          <img src={empresa7} alt="Empresa 7" className='empresa7 p-3' />
+
+          </div>
+
           </div>
           </div>
           </div>
-        </div>
+          </div>
+          </div>
 
 
-        <div className='safe container'>
-          <h2>Nuestros Servicios</h2>
-          <div className='safe-text container'>npm start
+        <div className='services container-fluid my-5  w-100'>
+
+          <h3>Nuestros Servicios</h3>
+          <h5>Te garantizamos el mejor servicio en cada uno de nuestros productos</h5>
+       
+
+       
+          <div className='icons container'>
           <div className='row'>
-            <div className='col-12'>
-          <h5>Nuestros servicios</h5>
-          </div>
-          </div>
-          </div>
-        </div>
 
+          <div className='col-sm-12 col-md-12 col-lg-4'>
+          <img src={icon1} alt="Icono 1" className='' />
+          <h5>Seriedad de la Oferta</h5>
+          </div>
+
+          <div className='col-sm-12 col-md-12 col-lg-4' >
+          <img src={icon3} alt="Icono 3" className='' />
+          <h5>Correcta Ejecución</h5>
+          </div>
+
+          <div className='col-sm-12 col-md-12 col-lg-4'>
+          <img src={icon2} alt="Icono 2" className='' />
+          <h5>Fiel Cumplimiento</h5>
+          </div>
+
+          </div>
+          </div>
+          </div>
+   
         
 
-        <div className='safe container'>
-          <h2>Somos los únicos con un buscador de licitaciones</h2>
+        <div className='safe services container my-5 w-100'>
+          <h3>Somos los únicos con un buscador de licitaciones</h3>
           <div className='safe-text container'>
           <div className='row'>
             <div className='col-12'>
-          <h5>Puedes encontrar más de 58.000 distintas</h5>
+          <h5>Puedes encontrar más de 58.000 distintas
+            <img src={iconbook} alt="Icono libro" className='ml-3'/>
+          </h5>
           </div>
           </div>
           </div>
         </div>
 
-        <div className='safe container'>
+        <div className='safe container mt-5'>
           <div className='row'>
-            <div className='col-sm-12 col-md-6 col-lg-6'>
-            <h2>Tu garantía en 3 pasos, 100% online</h2>
-          <h5>Puedes encontrar más de 58.000 distintas</h5>
+            <div className='col-sm-12 col-md-6 col-lg-6 mb-4'>
+            <h2 className='mb-4'>Tu garantía en 3 pasos, 100% online</h2>
+            <h5 className=''>¿Estás listo para registrarte? Te ofrecemos máxima 
+            seguridad en la compra de tu garantía 
+            <img src={iconsecurity} alt="Icono libro" className='ml-2'/>
+            </h5>
           </div>
           <div className='col-sm-12 col-md-6 col-lg-6'>
-          <img src={illustration2} alt="Ilustración" width= '180px' height= '180px' />
+          <img src={illustration4} alt="Ilustración" width= '180px' height= '180px' />
           </div>
           </div>
           </div>
      
 
-          <div className='form container'>
+         
+          <form className='contact form container w-100 my-5' id='contact'>
+                
+                <div className='form-title'>
+                <h3>Hola ¿Necesitas ayuda?</h3>
+                <h5>Pongámonos en contacto</h5>
+                </div>
+
+               
           <div className='row'>
-            <div className='col-sm-12 col-md-6 col-lg-12'>
-            <h2>Hola ¿necesitas ayuda?</h2>
-        
-          </div>
-      
-          </div>
-          </div>
+            {/* <div className='col-sm-12 col-md-6 col-lg-4'> */}
+
+                <label>Nombre</label>
+                <input
+                    className="form-control col-sm-12 col-md-6 col-lg-4 my-2"
+                    name="name"
+                    placeholder='Nombre'
+                />
+           
+                <label>Apellido</label>
+                <input
+                 className="form-control col-sm-12 col-md-6 col-lg-4 my-2"
+                 name="surname"
+                 placeholder='Apellido'
+                /> 
+
+
+                <label>Email</label>
+                <input
+                 className="form-control col-sm-12 col-md-6 col-lg-4 my-2"
+                 name="email"
+                 placeholder='Email'
+                /> 
+
+
+                {/* <div className='row'> */}
+                <div className='col-sm-12 col-md-12 col-lg-12'>
+
+                <label>Cuéntanos en que podemos ayudarte</label>
+
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+    
+                  Necesito ayuda con una garantía…
+                 </textarea>
+
+</div>
+  </div>
+  {/* </div> */}
+  {/* </div> */}
+            </form>
+
+
+
+
+
 
 
 

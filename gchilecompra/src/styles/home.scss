@@ -15,7 +15,7 @@ margin: 0 auto;
   right: 0;
   z-index:70;
   width:72%;
-  height:111vh;
+  height:105vh;
   margin-top: -150px;
   // margin-right: -15px;
   border-radius: 0px 0px 60px 0px;
@@ -61,8 +61,6 @@ margin: 0 auto;
  }
   
     .btn {
-    display:flex;
-    flex-direction: column;
     background: $blue-dark-color;
     z-index:90;
     width:fit-content;
@@ -83,17 +81,16 @@ margin: 0 auto;
  
 .search {
   display: flex;
-  position: absolute;
-  width: 98%;
+  // position: absolute;
+  width: 100%;
   z-index: 100;
   padding: 20px;
+  justify-content: space-around;
   justify-items: center;
-  justify-content: center;
     background: $bg-color;
     box-shadow: 2px 2px 2px 2px rgba(64, 64, 66, 0.308);
     border-radius: 20px;
     // overflow: hidden;
-    // margin-top: 200px;
  
       & .search1 {
         display: flex;
@@ -125,7 +122,7 @@ padding: 10px;
 .article {
   display: flex;
   flex-direction: column;
-  margin-top: 260px;
+  margin-top: 100px;
   color: $blue-dark-color;
   align-content: center;
   align-items: center;
@@ -202,6 +199,8 @@ padding: 10px;
 .safe {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
 
 & .safe-text {
   width: 100%;
@@ -210,7 +209,7 @@ padding: 10px;
   padding: 20px;
   justify-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
     background: $bg-color;
     box-shadow: 2px 2px 2px 2px rgba(64, 64, 66, 0.308);
     border-radius: 20px;
@@ -218,7 +217,94 @@ padding: 10px;
     justify-content: center;
 }
 
+
+
+
+ h3 {
+  color: $text-color;
+  text-align: center;
 }
+
+h5 {
+  color: $text-color;
+  text-align: center;
+}
+
+}
+
+.bg4-container {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  justify-self: center;
+  // margin-left: -50px;
+  // width: 110%;
+  height: 500px;
+  background-image :url(../images/bg4.png);
+  background-repeat: no-repeat;
+  // position: absolute;
+background-size: 120%;
+margin: 0 auto;
+
+
+& h3 {
+  color: $bg-color;
+  margin-top: 50px;
+}
+.nav-link button.btn {
+  text-align: center;
+}
+
+}
+
+
+.safe {
+  justify-content: center;
+  justify-items: center;
+}
+
+.empresas {
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: center;
+justify-items: center;
+
+
+& img.empresa  {
+  width: 160px;
+  height: 80px;
+  justify-content: center;
+justify-items: center;
+margin: 0 auto;
+}
+
+}
+
+.safe-text {
+  justify-content: center;
+justify-items: center;
+margin: 0 auto;
+}
+
+.empresa {
+justify-content: center;
+justify-items: center;
+}
+
+.empresa6 {
+width: 120px;
+height: 70px;
+margin-top: 10px;
+}
+
+.empresa7 {
+  width: 200px;
+  padding-bottom: 30px;
+  }
+
+
+
 
 
 @media (max-width:'400px') {
@@ -319,6 +405,32 @@ margin-top: 60px;
 .search2 {
   padding-bottom: 10px;
 }
+
+
+h3, h5 {
+  text-align: center;
+}
+
+
+
+.services {
+display: flex;
+text-align: center;
+justify-items: center;
+justify-content: center;
+
+& .icons {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
+}
+  & h5 {
+    display: flex;
+    text-align: center;
+    }
+}
+
 
 
 }

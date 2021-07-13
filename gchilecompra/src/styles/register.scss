@@ -6,8 +6,7 @@
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    align-items: left;
-    width: 100%;
+    // align-items: center;
     height: 100vh;
     margin-top: 30px;
 }
@@ -17,10 +16,11 @@
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    align-items: center;
-    width: 40%;
+    // align-items: center;
+    width: 84%;
     min-height: 500px;
     background: $bg-color;
+    // margin-right: 50px;
     padding:30px;
     border-radius: 50px;
 
@@ -29,10 +29,10 @@
        flex-direction: row;
         color: $secondary-color;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
    }
 
-   label {
+   & label {
    font-size: 14px;
    text-align: left;
 }
@@ -42,15 +42,28 @@
           background: $light-color;
           font-size: 14px;
           margin: 0px;
+          padding: 12px;
         }
 
-    .user {
-        display: inline;
-    }
+    // .registericon {
+    //     display: inline;
+    // }
 
-    & .btn {
-        align-items: center;
-        display: flex;
+
+
+// &.go {
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: center;
+//     // align-items: center;
+//     // justify-items: center;
+//     // justify-content: center;
+
+// }
+
+     &.btn3 {
+        // align-items: center;
+        // display: flex;
         text-align: center;
         background: $secondary-color;
         color: $bg-color;
@@ -59,6 +72,22 @@
 
 }
 
-.btn.send {
-z-index: 80;
-}
+    // button.btn.send {
+    // display: flex;
+    // z-index: 80;
+    // align-items: center;
+    //  align-content: center;
+    //  justify-items: center;
+    //   justify-content: center;
+    // }
+
+    .go {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        z-index: 70;
+        align-items: center;
+    }
+
+
+

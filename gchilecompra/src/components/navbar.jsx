@@ -30,7 +30,7 @@ function NavBar() {
                 <Nav.Item><Nav.Link href='/about'>Quiénes Somos</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href='/bidding'>Licitaciones</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href='/warranty'>Verificar Garantía</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href='/Contact'>Contacto</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href='/#contact'>Contacto</Nav.Link></Nav.Item>
                 </Nav>
 
 
@@ -41,7 +41,8 @@ function NavBar() {
                     <button className='btn' onClick={openModal}>Ingresar</button>
                        <Modal isOpen= {modalIsOpen}>
                         <form>
-                        <h3>Iniciar sesión</h3>
+                        <img src={logo} alt="Logo Inge" className='logo' width='150px' />
+                        <h3>Bienvenido</h3>
                             <input />
                             <input />
                         <button className='btn'>Ingresar</button> 

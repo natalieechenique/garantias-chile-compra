@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { useForm } from "react-hook-form";
-import user from '../images/user.png';
+import registericon from '../images/registericon.png';
 
 
 function FormHook () {
@@ -25,10 +25,10 @@ function FormHook () {
     return (
 
         <Fragment>
-            <form onSubmit={handleSubmit(onSubmit)} className='form'>
+            <form onSubmit={handleSubmit(onSubmit)} className='form my-2'>
                 
                 <div className='form-title'>
-                <h3>Registro de usuario <img src={user} alt='Usuario' width='30px' /></h3>
+                <h3>Regístrate <img src={registericon} alt='Usuario' width='30px' /></h3>
                 </div>
 
                 <label>Nombre completo</label>
@@ -168,18 +168,19 @@ function FormHook () {
                     {errors.repassword && errors.repassword.message}
                 </span>
                 
+            <div className='go'>
             <button className="btn send">Enviar</button>
             <br/>
               <div>
-                <div> 
-                    Ya tengo cuenta Ingresar
+                <div className='signin'>
+                    Ya tengo cuenta <span><a href='#'>Ingresar</a></span>
                 </div>
                 <br/>
                 <div> 
                     <button className="btn3">Continuar con con Google</button>
                 </div>
                 </div>
-
+                </div>  
             </form>
             
                 <ul>
