@@ -1,13 +1,15 @@
 import React from 'react';
  import '../styles/footer.scss';
  import logowhite from '../images/logowhite.png';
+ import bg5 from '../images/bg5.png';
 
 
 function Footer() {
 
 return (
 
-  <div className="footer">
+  <div className="footer-container mb-0">
+    <img src={bg5} alt="Footer Background" weight='100%' height='300px' mb-0/>
   <section class="footer text-center text-lg-start">
  
   <div className="footer d-flex justify-content-center justify-content-lg-between">
@@ -76,29 +78,3 @@ return (
 }
 
 export default Footer;
-
-
-
-
-
-
-
-  {/* <div className="foot row"> */}
-
-    {/* <div className="col-6 col-lg-3">FOOTER</div>
-    <div className="col-6 col-lg-3">FOOTER</div>
-    <div className="col-6 col-lg-3">FOOTER</div>
-    <div className="col-6 col-lg-3">FOOTER</div>
-
-    {/* <!-- Force next columns to break to new line --> */}
-{/*     
-    <div className="w-100"></div>
-
-    <div className="col-6 col-lg-3">FOOTER</div>
-    <div className="col-6 col-lg-3">FOOTER</div>
-    <div className="col-6 col-lg-3">FOOTER</div>
-    <div className="col-6 col-lg-3">FOOTER</div> */}
-    
-
-
-

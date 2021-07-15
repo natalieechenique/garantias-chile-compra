@@ -202,69 +202,72 @@ function Home () {
      
 
          
-          <form className='contact form container w-100 my-5' id='contact'>
+
+         {/* CONTACT */}
+          <form className='contact form safe-text container my-5' id='contact'>
                 
                 <div className='form-title'>
                 <h3>Hola ¿Necesitas ayuda?</h3>
                 <h5>Pongámonos en contacto</h5>
                 </div>
 
-               
-          <div className='row'>
-            {/* <div className='col-sm-12 col-md-6 col-lg-4'> */}
 
-                <label>Nombre</label>
+
+              
+          <div className='inputs-container'> 
+          <div className='row'>
+
+
+                {/* <label>Nombre</label> */}
                 <input
-                    className="form-control col-sm-12 col-md-6 col-lg-4 my-2"
+                    className="form-control col-sm-12 col-md-6 col-lg-3 p-2 m-2"
                     name="name"
                     placeholder='Nombre'
                 />
-           
-                <label>Apellido</label>
+        
+                {/* <label>Apellido</label> */}
                 <input
-                 className="form-control col-sm-12 col-md-6 col-lg-4 my-2"
+                 className="form-control col-sm-12 col-md-6 col-lg-3 p-2 m-2"
                  name="surname"
                  placeholder='Apellido'
                 /> 
-
-
-                <label>Email</label>
+        
+                {/* <label>Email</label> */}
                 <input
-                 className="form-control col-sm-12 col-md-6 col-lg-4 my-2"
+                 className="form-control col-sm-12 col-md-6 col-lg-3 p-2 m-2"
                  name="email"
                  placeholder='Email'
                 /> 
 
+           {/* </div> */}
+            {/* End inputs-container */}
 
-                {/* <div className='row'> */}
-                <div className='col-sm-12 col-md-12 col-lg-12'>
 
+              <div className='text-container'>
+                  
+              <div className='row'>
                 <label>Cuéntanos en que podemos ayudarte</label>
-
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
-    
+                <textarea className="form-control col-sm-12 col-md-12 col-lg-12" id="exampleFormControlTextarea1" rows="3">
                   Necesito ayuda con una garantía…
                  </textarea>
+              </div>
+              {/* End text-container */}
+             
+              </div>
+              {/* End text-container Row */}
 
-</div>
+              </div>
+              {/* End big Row */}
+
+              </div>
+               {/* End inputs-container */}
+      </form>
+      {/* End contact form */}
+
+
+
   </div>
-  {/* </div> */}
-  {/* </div> */}
-            </form>
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-// End Landing complete
-
+  // End Landing complete
 
  );
 }

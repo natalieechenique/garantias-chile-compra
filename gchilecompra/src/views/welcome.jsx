@@ -38,7 +38,7 @@ return (
       < Hello persona= 'Natalie' edad={27} />
       < Hello persona= 'Cata' />
       < Hello persona= 'Héctor' />
-      < Hello persona= 'Payasos' />
+      < Hello persona= 'Javier' />
 
 
  {/* LLAMAMOS A LA API EN UNA LISTA */}
