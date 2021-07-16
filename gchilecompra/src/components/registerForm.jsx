@@ -3,32 +3,32 @@ import { useForm } from "react-hook-form";
 import registericon from '../images/registericon.png';
 
 
-function FormHook () {
+function FormHook() {
 
-    const {register, handleSubmit, formState: { errors }} = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     // Creamos states, parte con array vacío
     const [Entradas, setEntradas] = useState([])
 
     const onSubmit = (data, e) => {
         console.log(data);
-    // Empujamos la data en Entradas
+        // Empujamos la data en Entradas
         setEntradas([
-        ...Entradas, 
-        data
+            ...Entradas,
+            data
         ])
         // Evento para borrar datos en placeholder
         e.target.reset();
     }
-    
-    
+
+
     return (
 
         <Fragment>
             <form onSubmit={handleSubmit(onSubmit)} className='form my-2'>
-                
+
                 <div className='form-title'>
-                <h3>Regístrate <img src={registericon} alt='Usuario' width='30px' /></h3>
+                    <h3>Regístrate <img src={registericon} alt='Usuario' width='30px' /></h3>
                 </div>
 
                 <label>Nombre completo</label>
@@ -36,38 +36,43 @@ function FormHook () {
                     className="form-control my-2"
                     name="name"
                     placeholder='Nombre completo'
-              
-                    {...register("name", {required:{value: true, message: 'Nombre requerido' 
+
+                    {...register("name", {
+                        required: {
+                            value: true, message: 'Nombre requerido'
                         },
-                        minLength:{ value: 4, message: 'Mínimo 4 caracteres'
+                        minLength: {
+                            value: 4, message: 'Mínimo 4 caracteres'
                         }
                     })
-                }   
+                    }
                 />
-           
-                
+
+
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
                 <span className="text-danger text-small d-block mb-2">
                     {errors.name && errors.name.message}
                 </span>
-               
+
 
                 <label>Rut</label>
                 <input
-                className="form-control my-2"
-                name="rut"
-                placeholder='Rut'
-                    
-                    {...register("rut", { 
-                        required:{value: true, message: 'Rut requerido' 
+                    className="form-control my-2"
+                    name="rut"
+                    placeholder='Rut'
+
+                    {...register("rut", {
+                        required: {
+                            value: true, message: 'Rut requerido'
                         },
-                        minLength:{ value: 8, message: 'Mínimo 8 caracteres'
-                    }
+                        minLength: {
+                            value: 8, message: 'Mínimo 8 caracteres'
+                        }
 
                     })
-                }   
-                /> 
+                    }
+                />
 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -78,18 +83,19 @@ function FormHook () {
 
                 <label>Email</label>
                 <input
-                className="form-control my-2"
-                name="email"
-                placeholder='Email'
-                    
-                    {...register("email", { 
-                        required:{value: true, message: 'Email requerido' 
+                    className="form-control my-2"
+                    name="email"
+                    placeholder='Email'
+
+                    {...register("email", {
+                        required: {
+                            value: true, message: 'Email requerido'
                         }
                         // indexOf:{value: '@@', message: 'Email inválido'}
                     })
-                }   
+                    }
                 />
-           
+
 
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
@@ -100,17 +106,19 @@ function FormHook () {
 
                 <label>Telèfono</label>
                 <input
-                className="form-control my-2"
-                name="phone"
-                placeholder='Teléfono'
-                    
-                    {...register("phone", { 
-                        required:{value: true, message: 'Teléfono requerido' 
+                    className="form-control my-2"
+                    name="phone"
+                    placeholder='Teléfono'
+
+                    {...register("phone", {
+                        required: {
+                            value: true, message: 'Teléfono requerido'
                         },
-                        minLength:{ value: 9, message: 'Ingresar 9 dígitos'
-                    }
+                        minLength: {
+                            value: 9, message: 'Ingresar 9 dígitos'
+                        }
                     })
-                }   
+                    }
                 />
 
 
@@ -124,20 +132,22 @@ function FormHook () {
 
                 <label>Crear contraseña</label>
                 <input
-                className="form-control my-2"
-                name="password"
-                placeholder='Contraseña'
-                    
-                    {...register("password", { 
-                        required:{value: true, message: 'Contraseña requerida' 
+                    className="form-control my-2"
+                    name="password"
+                    placeholder='Contraseña'
+
+                    {...register("password", {
+                        required: {
+                            value: true, message: 'Contraseña requerida'
                         },
-                        minLength:{ value: 6, message: 'Mínimo 6 caracteres'
-                    }
+                        minLength: {
+                            value: 6, message: 'Mínimo 6 caracteres'
+                        }
                     })
-                }   
+                    }
                 />
-               
-                
+
+
                 {/* Pintar error */}
                 {/* Si esto no esta undefined, pintara este span */}
                 <span className="text-danger text-small d-block mb-2">
@@ -147,18 +157,20 @@ function FormHook () {
 
                 <label>Repetir contraseña</label>
                 <input
-                className="form-control my-2"
-                name="repassword"
-                placeholder='Contraseña'
-                    
-                    {...register("repassword", { 
-                        required:{value: true, message: 'Contraseña requerida' 
+                    className="form-control my-2"
+                    name="repassword"
+                    placeholder='Contraseña'
+
+                    {...register("repassword", {
+                        required: {
+                            value: true, message: 'Contraseña requerida'
                         },
-                        minLength:{ value: 8, message: 'Contraseñas no coinciden'
-                    }
+                        minLength: {
+                            value: 8, message: 'Contraseñas no coinciden'
+                        }
 
                     })
-                }   
+                    }
                 />
 
 
@@ -167,32 +179,32 @@ function FormHook () {
                 <span className="text-danger text-small d-block mb-2">
                     {errors.repassword && errors.repassword.message}
                 </span>
-                
-            <div className='go'>
-            <button className="btn send">Enviar</button>
-            <br/>
-              <div>
-                <div className='signin'>
-                    Ya tengo cuenta <span><a href='#'>Ingresar</a></span>
+
+                <div className='go'>
+                    <button className="btn send">Enviar</button>
+                    <br />
+                    <div>
+                        <div className='signin'>
+                            Ya tengo cuenta <span><a href='#'>Ingresar</a></span>
+                        </div>
+                        <br />
+                        <div>
+                            <button className="btn3">Continuar con con Google</button>
+                        </div>
+                    </div>
                 </div>
-                <br/>
-                <div> 
-                    <button className="btn3">Continuar con con Google</button>
-                </div>
-                </div>
-                </div>  
             </form>
-            
-                <ul>
+
+            <ul>
                 {
-                Entradas.map(item =>
-                    <li>{item.name} - {item.rut} - {item.email} - {item.phone} - {item.password} - {item.repassword} </li>
+                    Entradas.map(item =>
+                        <li>{item.name} - {item.rut} - {item.email} - {item.phone} - {item.password} - {item.repassword} </li>
                     )
-                    }
-                </ul>
-
-                </Fragment>
-                );
                 }
+            </ul>
 
-         export default FormHook;
+        </Fragment>
+    );
+}
+
+export default FormHook;

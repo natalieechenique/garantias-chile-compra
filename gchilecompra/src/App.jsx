@@ -6,10 +6,10 @@ function App() {
 
   return (
 
-<div className="App">
-  <AppRouter />
-  <Footer />
-  </div>
+    <div className="App">
+      <AppRouter />
+      <Footer />
+    </div>
   );
 }
 

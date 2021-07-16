@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Warranty () {
+function Warranty() {
     return (
 
         <div className='container'>

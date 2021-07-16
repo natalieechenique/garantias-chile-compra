@@ -1,25 +1,19 @@
-
-
-
 .avatar-img {
   display: flex;
   justify-content: center;
 
-    float: center;
+  float: center;
+}
+
+.about {
+  text-align: center;
+
+  & h2 {
+    color: #304f97;
   }
-  
+}
 
-  .about {
-      text-align: center;
-
-      & h2 {
-          color: #304F97;
-      }
-  }
-
-  .linkedin {
-      display: flex;
-      justify-content: right;
-  }
-
-
+.linkedin {
+  display: flex;
+  justify-content: right;
+}
