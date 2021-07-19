@@ -1,57 +1,57 @@
-// import React from 'react'
+import React, { useState } from 'react';
+import LoginForm from '../components./../components/loginForm';
 // import '../styles/login.scss';
 // import Modal from 'react-modal';
 
 
+function Admin() {
 
-//  function Login() {
+    const adminUser = {
+        email: "admin@admin.com",
+        password: "admin123"
+    }
 
-// //  let subtitle;   
+    const [user, setUser] = useState({ email: "", password: "" });
+    const [error, setError] = useState("");
 
-// const [modalIsOpen, setIsOpen] = React.useState(false);
-//    function openModal() {
-//       setIsOpen(true);
-//    }
-  
-// //     function afterOpenModal() {
-
-// //   subtitle.style.color = '#f00';
-// // }
-  
-//   function closeModal() {
-//      setIsOpen(false);
-//     }
-  
-//    return (
+    
+    const Login = details => {
+        console.log(details);
 
 
-//       <div>
-//     {/* //     <button onClick={openModal}>Open Modal</button> */}
-//       {/* <Modal
-//         isOpen={modalIsOpen}
-// //    onAfterOpen={afterOpenModal}
-//           onRequestClose={closeModal}
-         
-//         contentLabel="Example Modal"
-        
-//         >
+        if (details.email === adminUser.email && details.password === adminUser.password) {
+            console.log('Logueado');
+            setUser({
+                email: details.email,
+                password: details.password
+            });
+        } else {
+            console.log('Datos no coinciden');
+            setError('Datos no coinciden')
+        }
+    }
+    
+    
+    const Logout = () => {
+        // console.log("Logout");
+        setUser({ email: "", password: "" });
+    } 
 
-//          {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
-//         {/* <button onClick={closeModal}>close</button>
-//          <div>Iniciar sesión</div>
-//           <form>
-//            <input />
 
-            
-          
-             
-//             <button>Enviar</button>
-//          </form>
-//         </Modal> */}
-//       </div>
-//     );
-//   }
+    return (
 
- 
+        <div className='Admin'>
+            {/* Si email no es igual a nada, renderizar welcome */}
+            {(user.email != "") ? (
+                <div className="welcome">
+                    <h2>Hola<span>{user.email}</span></h2>
+                    <button onClick={Logout}>Logout</button>
+                </div>
+            ) : (
+                <LoginForm Login={Login} error={error} />
+            )}
+        </div>
+    );
+}
 
-//  export default Login;
+export default Admin;

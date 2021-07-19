@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import Modal from 'react-modal';
+
+import LoginForm from'../components/loginForm';
+import DocumentForm from'../components/documentForm';
+
 import logo from '../images/logo.png';
+
 import '../styles/navbar.scss';
 import '../styles/login.scss';
+
 
 function NavBar() {
 
     const [modalIsOpen, setIsOpen] = React.useState(false);
+    
 
     const openModal = () => {
         setIsOpen(true);
@@ -16,6 +23,21 @@ function NavBar() {
     function closeModal() {
         setIsOpen(false);
     }
+
+
+
+
+    const [showModal, setShowModal] = React.useState(false);
+        
+    
+        const open = () => {
+            setShowModal(true);
+        }
+    
+        function closeModal() {
+            setShowModal(false);
+        }
+
 
     return (
 
@@ -29,25 +51,34 @@ function NavBar() {
                     <Nav.Item><Nav.Link href='/'></Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href='/about'>Quiénes Somos</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href='/bidding'>Licitaciones</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href='/warranty'>Verificar Garantía</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href='/#contact'>Contacto</Nav.Link></Nav.Item>
+                   
+
+                    <Nav.Item>
+                        <Nav.Link className='warranties'>
+                        
+
+                            
+                 <span className='warranty' onClick={open}>Verificar Garantía</span> 
+                            <Modal isOpen={showModal} id='docOpen'>
+                            <DocumentForm />
+                            <button className='btn' onClick={closeModal}>Cerrar</button> 
+                            </Modal> 
+                            </Nav.Link>
+                            </Nav.Item>
+
+
+                    <Nav.Item>
+                        <Nav.Link href='/#contact'>Contacto</Nav.Link></Nav.Item>
                 </Nav>
 
 
                 <Nav className='btn-group m-auto'>
-
                     <Nav.Item>
                         <Nav.Link>
                             <button className='btn' onClick={openModal}>Ingresar</button>
                             <Modal isOpen={modalIsOpen}>
-                                <form>
-                                    <img src={logo} alt="Logo Inge" className='logo' width='150px' />
-                                    <h3>Bienvenido</h3>
-                                    <input />
-                                    <input />
-                                    <button className='btn'>Ingresar</button>
-                                    <button className='btn' onClick={closeModal}>Cerrar</button>
-                                </form>
+                                    <LoginForm />
+                            <button className='btn' onClick={closeModal}>Cerrar</button>
                             </Modal>
                         </Nav.Link>
                     </Nav.Item>

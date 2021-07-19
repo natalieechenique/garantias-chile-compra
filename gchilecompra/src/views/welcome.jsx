@@ -28,7 +28,7 @@ function Welcome() {
 
     // PARA PAGINA USUARIO LOGUEADO
 
-    //  Acá llamamos los props creados en `Props.jsx`, asi nos ahorramos de crear más componentes
+    //  Acá llamamos los props creados en `hello.jsx`, asi nos ahorramos de crear más componentes
     //  props: Interacción entre componentes   
     // Saludo vendría siendo componentes-variables  
     // Pasan la variables a otro componente, en vez de crear un componente nuevo

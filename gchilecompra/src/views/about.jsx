@@ -7,6 +7,8 @@ import avatar3 from '../images/avatar3.png';
 import icongroup from '../images/icongroup.png';
 import iconlinkedin from '../images/iconlinkedin.png';
 
+import window from '../images/window.png';
+
 
 import '../styles/about.scss';
 
@@ -15,7 +17,7 @@ function About() {
   return (
     <div className='about container my-5'>
       <h2>Conoce a nuestro equipo</h2>
-      <h5 className='linkedin mb-5'>Somos un equipo de amplia experiencia en el sector financiero</h5>
+      <h5 className='we-are mb-5'>Somos un equipo de amplia experiencia en el sector financiero</h5>
 
       <div className='row'>
 
@@ -52,7 +54,7 @@ function About() {
               Gerente de negocios financieros en
               compañías del rubro financiero y
               seguros, en dos geografías Chile y Perú</h6>
-            <img src={iconlinkedin} alt="Linkedin" className='mb-5' />
+            <img src={iconlinkedin} alt="Linkedin" className='linkedin mb-5' />
           </div>
         </div>
 
@@ -62,7 +64,6 @@ function About() {
           </div>
           <div>
             <h5>Carlos Canales</h5>
-
             <h6>Socio y Presidente directorio</h6>
             <h6>Ingeniero Civil Industrial de la
               Universidad Mayor (Chile), me he
@@ -87,7 +88,22 @@ function About() {
           </div>
         </div>
 
+<div className='about-pyme container my-5'>
 
+<div className='row'>
+
+<div className='about-pyme-text col-sm-12 col-md-6 col-lg-6'>
+<h3>Tenemos como objetivo apoyar a
+todas las Pymes</h3>
+<p>Contamos con el apoyo de diversas entidades que buscan hacer crecer la industria chilena y estamos supervisados como entidad financiera.
+</p>
+</div>
+
+<div className='about-pic col-sm-12 col-md-6 col-lg-6'>
+<img src={window} alt="Ventana" className='mb-5'width='400px' />
+</div>
+</div>
+</div>
       </div>
 
     </div>

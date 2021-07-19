@@ -8,12 +8,13 @@
 // }
 
 div .footer {
-  position: relative;
+  position: block;
   bottom: 0;
   width: 100%;
-  height: 100%;
-  clear: both;
+  // height: 100%;
+  // clear: both;
   background: $primary-color;
+  margin-top: auto;
 
   & h6 {
     color: white;
