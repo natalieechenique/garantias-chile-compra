@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StepCards from './StepCards';
-import Contact from './Contact';
-import Services from './Services';
-import Partners from './Partners';
+import StepCards from './stepCards';
+import Contact from './contact';
+import Services from './services';
+import Partners from './partners';
 
 import bg2 from '../../images/bg2.png';
 import home from '../../images/home.PNG';
@@ -14,7 +14,7 @@ import iconsecurity2 from '../../images/iconsecurity.png';
 import illustration4 from '../../images/illustration4.png';
 
 import '../../styles/home.scss';
-import IdSearch from '../../components/IdSearch'
+import IDSearch from '../../components/idSearch'
 
 
 function Home() {
@@ -51,7 +51,7 @@ function Home() {
 
       {/* SEARCH SECTION */}
       <section className='search-container mt-5'>
-        <IdSearch />
+        <IDSearch />
         <div className='bg2'>
           <img src={bg2} alt="Forma fondo" width='400px' height='700px' />
         </div>
