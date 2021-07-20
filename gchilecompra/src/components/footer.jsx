@@ -10,7 +10,7 @@ function Footer() {
 
     <div className="footer-container mb-0">
       {/* <img src={bg5} alt="Footer Background" weight='100%' height='300px' mb-0 /> */}
-      <section class="footer text-center text-lg-start">
+      <section className="footer text-center text-lg-start">
 
         <div className="footer d-flex justify-content-center justify-content-lg-between">
 
@@ -52,7 +52,7 @@ function Footer() {
 
 
             <div className='footer2 d-flex justify-content-center justify-content-lg-between'>
-              <section class="footer2 text-center text-lg-start">
+              <section className="footer2 text-center text-lg-start">
                 <div className="text-center col-xs-12 col-md-12 col-lg-12 col-xl-12 mx-auto mb-md-0 pb-1 expand-lg">
                   <a className="fw-bold" href="https://designseo.cl/"> ©DesignSeo 2021</a>
                 </div>

@@ -1,35 +1,35 @@
-@use 'variables' as *;
+// @use 'variables' as *;
 
-// MODAL CONTENEDOR
-.ReactModal__Content {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  width: 30%;
-  height: auto;
-  text-align: center;
-  margin-top: 100px;
-  // border-radius: 100px;
-  z-index: 999 !important;
+// // MODAL CONTENEDOR
+// .ReactModal__Content {
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   align-content: center;
+//   justify-content: center;
+//   justify-items: center;
+//   width: 30%;
+//   height: auto;
+//   text-align: center;
+//   margin-top: 100px;
+//   // border-radius: 100px;
+//   z-index: 999 !important;
 
-  & form {
-    display: flex;
-    flex-direction: column;
-  }
+//   & form {
+//     display: flex;
+//     flex-direction: column;
+//   }
 
-  form input {
-    padding: 10px;
-    margin: 5px;
-  }
-}
+//   form input {
+//     padding: 10px;
+//     margin: 5px;
+//   }
+// }
 
-.ReactModalPortal .ReactModal__Content--after-open {
-  background: white !important;
-  // border: 1px solid rgb(219, 217, 217) !important;
-  border-radius: 20px !important;
-  z-index: 100 !important;
-}
+// .ReactModalPortal .ReactModal__Content--after-open {
+//   background: white !important;
+//   // border: 1px solid rgb(219, 217, 217) !important;
+//   border-radius: 20px !important;
+//   z-index: 100 !important;
+// }

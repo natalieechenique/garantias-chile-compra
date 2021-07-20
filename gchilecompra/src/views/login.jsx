@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LoginForm from '../components./../components/loginForm';
+import LoginForm from './loginForm';
 // import '../styles/login.scss';
 // import Modal from 'react-modal';
 
@@ -31,12 +31,10 @@ function Admin() {
         }
     }
     
-    
     const Logout = () => {
         // console.log("Logout");
         setUser({ email: "", password: "" });
     } 
-
 
     return (
 

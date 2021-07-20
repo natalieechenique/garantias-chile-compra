@@ -1,6 +1,6 @@
 import React from "react";
-import AppRouter from "./components/router";
-import Footer from './components/footer';
+import AppRouter from "./components/Router";
+import Footer from './components/Footer';
 
 function App() {
 

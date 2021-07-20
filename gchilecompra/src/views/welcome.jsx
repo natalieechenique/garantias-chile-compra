@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Hello from '../components/hello';
+import Hello from '../components/Hello';
 
 function Welcome() {
 
