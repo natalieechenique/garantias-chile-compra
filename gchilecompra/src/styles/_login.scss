@@ -29,7 +29,6 @@
 
 .ReactModalPortal .ReactModal__Content--after-open {
   background: white !important;
-  // border: 1px solid rgb(219, 217, 217) !important;
-  border-radius: 20px !important;
+  border-radius: 20px;
   z-index: 100 !important;
 }

@@ -40,7 +40,6 @@ function AppRouter() {
       
 
           {/* Ruta dentro de api, id es una variable, pùede ser otro nombre */}
-
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>

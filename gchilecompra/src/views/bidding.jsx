@@ -19,7 +19,7 @@ function Bidding() {
                             </h5>
                         </div>
                     </div>
-<br></br>
+                    <br></br>
                 </div>
             </section>
 
@@ -93,7 +93,7 @@ function Bidding() {
                     </div>
                     {/* End inputs-container */}
                 </div>
-                 {/* End form row*/}
+                {/* End form row*/}
             </form>
 
 
