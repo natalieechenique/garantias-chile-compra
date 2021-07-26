@@ -4,6 +4,7 @@ import StepCards from './stepCards';
 import Contact from './contact';
 import Services from './services';
 import Partners from './partners';
+import IDSearch from '../../components/idSearch'
 
 import bg2 from '../../images/bg2.png';
 import home from '../../images/home.PNG';
@@ -13,8 +14,9 @@ import iconbook from '../../images/iconbook.png';
 import iconsecurity2 from '../../images/iconsecurity.png';
 import illustration4 from '../../images/illustration4.png';
 
-import '../../styles/home.scss';
-import IDSearch from '../../components/idSearch'
+import '../../styles/_home.scss';
+
+
 
 
 function Home() {

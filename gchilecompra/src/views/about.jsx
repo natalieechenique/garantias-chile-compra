@@ -10,7 +10,7 @@ import iconlinkedin from '../images/iconlinkedin.png';
 import window from '../images/window.png';
 
 
-import '../styles/about.scss';
+import '../styles/_about.scss';
 
 
 function About() {

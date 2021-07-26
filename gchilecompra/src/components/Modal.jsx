@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/modal.scss';
+import '../styles/_modal.scss';
 
 const Modal = ({children, isOpen, closeModal}) => {
     const handleModalContainerClick = (e) => e.stopPropagation();

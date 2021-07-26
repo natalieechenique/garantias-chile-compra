@@ -4,10 +4,13 @@ import icon1 from '../../images/icon1.png';
 import icon2 from '../../images/icon2.png';
 import icon3 from '../../images/icon3.png';
 
+import '../../styles/_services.scss';
+
 const Services = () => {
     return (
 
-        <div className='services container-fluid my-5 w-100'>
+        <div className='services container-fluid my-5'>
+            
             <div className='services-title-container'>
                 <h3>Nuestros Servicios</h3>
                 <br></br>

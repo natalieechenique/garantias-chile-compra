@@ -1,7 +1,7 @@
 import React from 'react';
 import RegisterForm from '../components/registerForm';
 import illustration5 from '../images/illustration5.png';
-import '../styles/register.scss';
+import '../styles/_register.scss';
 
 function Register() {
     return (

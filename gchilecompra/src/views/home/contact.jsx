@@ -19,7 +19,7 @@ function Contact() {
                         <div className='input-container'>
                             <label>Nombre</label>
                             <input
-                                className="form-control col-sm-12 col-md-6 col-lg-3 p-2 m-2"
+                                className="form-control col-sm-12 col-md-6 col-lg-4 p-2 m-2"
                                 name="name"
                                 placeholder='Nombre'
                             />
@@ -27,7 +27,7 @@ function Contact() {
                         <div className='input-container'>
                             <label>Apellido</label>
                             <input
-                                className="form-control col-sm-12 col-md-6 col-lg-3 p-2 m-2"
+                                className="form-control col-sm-12 col-md-6 col-lg-4 p-2 m-2"
                                 name="surname"
                                 placeholder='Apellido'
                             />
@@ -36,7 +36,7 @@ function Contact() {
                         <div className='input-container'>
                             <label>Email</label>
                             <input
-                                className="form-control col-sm-12 col-md-6 col-lg-3 p-2 m-2"
+                                className="form-control col-sm-12 col-md-6 col-lg-4 p-2 m-2"
                                 name="email"
                                 placeholder='Email'
                             />
