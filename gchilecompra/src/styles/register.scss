@@ -81,6 +81,10 @@
   display: flex;
   flex-direction: column;
   display: flex;
-  z-index: 70;
+  z-index: 0;
   align-items: center;
+}
+
+.btn {
+  z-index: 0;
 }
