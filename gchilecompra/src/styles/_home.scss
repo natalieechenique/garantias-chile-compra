@@ -1,11 +1,10 @@
-@use '../styles/variables' as *;
+@use '../styles/_variables' as *;
 
 .landing-container-fluid {
   margin: 0 auto;
 }
 
 .bg1img {
-  // display: flex;
   background-image: url(../images/bg1.png);
   background-repeat: no-repeat;
   float: right;
@@ -16,7 +15,6 @@
   width: 72%;
   height: 105vh;
   margin-top: -150px;
-  // margin-right: -15px;
   border-radius: 0px 0px 60px 0px;
 }
 
@@ -29,14 +27,24 @@
   left: 0;
 }
 
+.middle.container.fluid {
+  background: red;
+  width: 100%;
+  height: 500px;
+}
+
 .home-container {
   background-color: $light-color;
 }
 
 .img1 {
+<<<<<<< HEAD:gchilecompra/src/styles/home.scss
   // position: relative;
   //  float: left;
   z-index: 0;
+=======
+  z-index: 90;
+>>>>>>> master:gchilecompra/src/styles/_home.scss
   margin-top: 250px;
   margin-bottom: 70px;
   margin-left: 160px;
@@ -80,7 +88,6 @@
 
 .search {
   display: flex;
-  // position: absolute;
   width: 100%;
   z-index: 0;
   padding: 20px;
@@ -89,7 +96,6 @@
   background: $bg-color;
   box-shadow: 2px 2px 2px 2px rgba(64, 64, 66, 0.308);
   border-radius: 20px;
-  // overflow: hidden;
 
   & .search1 {
     display: flex;
@@ -110,6 +116,7 @@
   }
 }
 
+<<<<<<< HEAD:gchilecompra/src/styles/home.scss
 .article {
   display: flex;
   flex-direction: column;
@@ -182,6 +189,11 @@
   margin-left: 16px;
   margin-top: 10px;
   box-shadow: 3px 3px 3px rgb(194, 191, 191);
+=======
+.btn2 {
+  margin-left: 10px;
+  padding: 10px;
+>>>>>>> master:gchilecompra/src/styles/_home.scss
 }
 
 .safe {
@@ -190,13 +202,8 @@
   justify-content: center;
 
   & .safe-text {
-    // width: 100%;
-    // height: 100%;
     margin: 50px auto;
     padding: 20px;
-    // justify-items: center;
-    // justify-content: center;
-    // text-align: center;
     background: $bg-color;
     box-shadow: 2px 2px 2px 2px rgba(64, 64, 66, 0.308);
     border-radius: 20px;
@@ -219,12 +226,9 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  justify-self: center;
-  // padding: 0px 0px 300px 0px;
   height: 510px;
   background-image: url(../images/bg4.png);
   background-repeat: no-repeat;
-  // position: absolute;
   background-size: 100%;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -243,97 +247,10 @@
   justify-items: center;
 }
 
-.empresas {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-
-  & img.empresa {
-    width: 160px;
-    height: 80px;
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
-  }
-}
-
 .safe-text {
   justify-content: center;
   justify-items: center;
   margin: 0 auto;
-}
-
-.empresa {
-  justify-content: center;
-  justify-items: center;
-}
-
-.empresa6 {
-  width: 120px;
-  height: 70px;
-  margin-top: 10px;
-}
-
-.empresa7 {
-  width: 200px;
-  padding-bottom: 30px;
-}
-
-// SERVICES
-.services {
-  display: flex;
-  flex-direction: column;
-  text-align: center !important;
-  align-items: center !important;
-  justify-items: center !important;
-  justify-content: center !important;
-
-  & .services-title-container {
-    display: block !important;
-  }
-
-  & .services-title-container h3 {
-    color: $blue-dark-color;
-    font-size: 30px;
-  }
-
-  & .services-title-container h5 {
-    color: $text-color;
-    font-size: 20px;
-  }
-
-  & .icons.container h5 {
-    display: flex;
-    justify-items: center !important;
-    font-size: 16px;
-    margin-left: 130px;
-    // margin-right: 90px;
-  }
-
-  & .icons {
-    display: flex;
-    justify-content: center !important;
-    justify-items: center !important;
-  }
-
-  & .icons img {
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 20px;
-  }
-
-  & .icons h5 {
-    text-align: center;
-  }
-
-  & h5 {
-    display: flex;
-    text-align: center !important;
-    color: $text-color;
-    font-size: 14px;
-  }
 }
 
 // SEGURIDAD TEXTO
@@ -380,8 +297,15 @@
   }
 
   & .inputs-container {
-    padding-bottom: 20px;
-    width: 78%;
+    // padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+    & label {
+      display: block;
+    }
   }
 
   & .form-control {
@@ -401,7 +325,7 @@
     margin-right: -30px;
     font-size: 13px;
     font-weight: bold;
-    width: 90px;
+    width: 100px;
   }
 
 }
@@ -469,9 +393,9 @@
     flex-direction: column;
     position: relative;
     margin: 0px auto !important;
-    // justify-items: left;
-    // justify-content: space-around;
+    margin: 40px;
   }
+
   .search2 .btn2 {
     margin-left: 0px;
     margin-top: 10px;
@@ -497,5 +421,24 @@
 
   .search2 {
     padding-bottom: 10px;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .services-title-container {
+    margin-bottom: 20px;
+  }
+  .services .icons img {
+    width: 200px;
+    text-align: center;
+  }
+
+  .contact {
+    & form {
+      width: 100%;
+      margin-left: 10px;
+    }
   }
 }

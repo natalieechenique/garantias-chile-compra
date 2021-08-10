@@ -1,0 +1,61 @@
+@use '../styles/_variables' as *;
+
+.warranty.container {
+width: 100%;
+height: 100vh;
+display: flex;
+align-content: center;
+align-items: center;
+justify-content: center;
+justify-items: center;
+justify-content: center;
+text-align: center;
+
+& h4 {
+    color: $blue-dark-color;
+    text-align: center; 
+}
+
+& img {
+    width: 100%;
+}
+
+& .btn {
+    background: $primary-color;
+    float: right;
+    border-radius: 10px;
+}
+
+& .form-container {
+    background: $bg-color;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 650px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 5px rgb(194, 191, 191);
+    border-radius: 20px;
+    // float: center;
+}
+}
+
+.middle {
+    background: $light-color;
+   position: absolute;
+   top:0;
+   
+//    left: 0;
+
+    border-end-end-radius: 200px;
+}
+
+.documentid{
+    background:#0066ff1f;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 100%;
+}

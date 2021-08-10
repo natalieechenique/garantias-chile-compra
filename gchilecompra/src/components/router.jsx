@@ -8,11 +8,10 @@ import About from "../views/about.jsx";
 import Bidding from "../views/bidding.jsx";
 import Warranty from "../views/warranty.jsx";
 import Contact from "../views/home/contact.jsx";
-
-import Register from "../views/register.jsx";
-import LoginForm from  "../components/loginForm.jsx";
-import DocumentForm from  "../components/documentForm.jsx";
 import Welcome from "../views/welcome.jsx";
+import Register from "../views/register.jsx";
+
+import LoginForm from  "../components/loginForm.jsx";
 import Api from "../components/api.jsx";
 import PruebaApi from "../components/pruebaApi.jsx";
 
@@ -30,7 +29,7 @@ function AppRouter() {
           <Route path='/register' component={Register} />
     
           <Route path='/loginForm' component= {LoginForm} />
-          <Route path='/documentForm' component= {DocumentForm} />
+          <Route path='/warranty' component= {Warranty} />
 
           <Route path='/welcome' component={Welcome} /> 
 
@@ -41,7 +40,6 @@ function AppRouter() {
       
 
           {/* Ruta dentro de api, id es una variable, pùede ser otro nombre */}
-
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>

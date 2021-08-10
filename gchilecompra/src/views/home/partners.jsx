@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/home.scss';
+import '../../styles/_partners.scss';
 
 import empresa1 from '../../images/empresa1.png';
 import empresa2 from '../../images/empresa2.png';
@@ -20,21 +20,20 @@ const Partners = () => {
             <div className='safe'>
                 <h3>Tu proyecto respaldado</h3>
                 <div className='safe-text'>
-                    <div className='row'>
-                        <div className='col-12 d-flex'>
+                    {/* <div className='row'> */}
+                        <div className=''>
                             <div className='empresas'>
                                 <img src={empresa1} alt="Empresa 1" className='empresa p-3' />
                                 <img src={empresa2} alt="Empresa 2" className='empresa p-3' />
                                 <img src={empresa3} alt="Empresa 3" className='empresa p-3' />
                                 <img src={empresa4} alt="Empresa 4" className='empresa p-3' />
                                 <img src={empresa5} alt="Empresa 5" className='empresa p-3' />
-                                <img src={empresa6} alt="Empresa 6" className='empresa6 p-3' />
-                                <img src={empresa7} alt="Empresa 7" className='empresa7 p-3' />
-
+                                <img src={empresa6} alt="Empresa 6" className='empresa p-3' />
+                                <img src={empresa7} alt="Empresa 7" className='empresa p-3' />
                             </div>
-
                         </div>
-                    </div>
+                    {/* </div> */}
+                    {/* // END ROW */}
                 </div>
             </div>
 

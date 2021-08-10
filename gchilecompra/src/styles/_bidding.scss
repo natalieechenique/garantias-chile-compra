@@ -1,0 +1,22 @@
+// BIDDINGS LICITACIONES
+.bidding {
+    height: 100vh;
+    margin-top: 40px;
+  }
+  .contact.bidding.form {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 700px;
+  
+    & .inputs-container {
+      width: 60%;
+    }
+    
+    
+    & .btn {
+      display: block;
+      float: right;
+    }
+  }
+  

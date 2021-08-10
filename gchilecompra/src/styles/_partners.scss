@@ -1,0 +1,52 @@
+@use '_variables' as *;
+
+.empresas {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  
+    & img.empresa {
+      width: 160px;
+      height: 80px;
+      justify-content: center;
+      justify-items: center;
+      margin: 0 auto;
+    }
+  }
+  
+  .safe-text {
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+  
+  .empresa {
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .empresa6 {
+    width: 120px;
+    height: 70px;
+    margin-top: 10px;
+  }
+  
+  .empresa7 {
+    width: 200px;
+    padding-bottom: 30px;
+  }
+
+  
+
+// RESPONSIVE
+// MOBILE
+@media (max-width: "400px") {
+
+// Partners
+  .bg4-container {
+    display:none;
+  }
+
+}

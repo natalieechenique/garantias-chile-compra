@@ -8,7 +8,6 @@ const Hello = (props) => {
         <Fragment>
             <h2>Hola {props.persona}</h2>
         </Fragment>
-
     );
 }
 

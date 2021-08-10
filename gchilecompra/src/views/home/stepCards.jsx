@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../styles/_stepCards.scss';
+
 import illustration1 from '../../images/illustration1.png';
 import illustration2 from '../../images/illustration2.png';
 import illustration3 from '../../images/illustration3.png';

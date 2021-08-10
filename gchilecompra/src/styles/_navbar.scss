@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use '_variables' as *;
 
 .navbar {
   background: $bg-color;
@@ -57,15 +57,3 @@
   }
 }
 
-@media (max-width: "600px") {
-  .btn-group {
-    display: flex;
-    flex-direction: row;
-    // justify-content: space-around;
-  }
-
-  .btn-group .btn {
-    margin-right: 4px;
-    text-align: center;
-  }
-}

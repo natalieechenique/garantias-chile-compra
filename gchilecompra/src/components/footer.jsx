@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/footer.scss';
+import '../styles/_footer.scss';
 import logowhite from '../images/logowhite.png';
 // import bg5 from '../images/bg5.png';
 
