@@ -25,7 +25,7 @@ function FormHook() {
     return (
 
         <Fragment>
-            <form onSubmit={handleSubmit(onSubmit)} className='form my-2'>
+            <form onSubmit={handleSubmit(onSubmit)} className='form my-4'>
 
                 <div className='form-title'>
                     <h3>Regístrate <img src={registericon} alt='Usuario' width='30px' /></h3>
@@ -181,12 +181,12 @@ function FormHook() {
                 </span>
 
                 <div className='go'>
-                    <button className="btn send">Enviar</button>
+                    <button className="btn send"><b>REGISTRARSE</b></button>
                     <br />
                     <div>
                         <div className='signin'>
                          {/* eslint-disable-next-line */}
-                            Ya tengo cuenta <span><a href='#'>Ingresar</a></span>
+                            Ya tengo cuenta <span><a href='#'><b>Ingresar</b></a></span>
                         </div>
                         <br />
                         <div>

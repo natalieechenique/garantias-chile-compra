@@ -1,8 +1,8 @@
 @use '_variables' as *;
 
 .empresas {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     text-align: center;
     justify-content: center;
     justify-items: center;
@@ -38,15 +38,3 @@
     padding-bottom: 30px;
   }
 
-  
-
-// RESPONSIVE
-// MOBILE
-@media (max-width: "400px") {
-
-// Partners
-  .bg4-container {
-    display:none;
-  }
-
-}

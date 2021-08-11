@@ -14,6 +14,7 @@ import Register from "../views/register.jsx";
 import LoginForm from  "../components/loginForm.jsx";
 import Api from "../components/api.jsx";
 import PruebaApi from "../components/pruebaApi.jsx";
+import Faqs from "../views/faqs.jsx";
 
 function AppRouter() {
   return (
@@ -40,6 +41,9 @@ function AppRouter() {
       
 
           {/* Ruta dentro de api, id es una variable, pùede ser otro nombre */}
+
+          <Route path='/faqs' component={Faqs} /> 
+
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>

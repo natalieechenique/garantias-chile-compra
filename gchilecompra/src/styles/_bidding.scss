@@ -1,22 +1,45 @@
+@use '../styles/_variables' as *;
+
 // BIDDINGS LICITACIONES
+
 .bidding {
-    height: 100vh;
-    margin-top: 40px;
+  & h2 {
+    color: $blue-dark-color;
+    text-align: center;
+    margin-top: 100px;
   }
-  .contact.bidding.form {
-    display: flex;
-    flex-direction: column;
+
+  & h5 {
+    color: #33363b;
+    text-align: center;
+  }
+
+  & h3 {
+    color: #33363b;
+    text-align: center;
+  }
+}
+
+// .bidding.container.contact {
+//   margin-top: 40px;
+// }
+
+.bidding-contact-form {
+  // display: flex;
+  // flex-direction: column;
+  float: right;
+  width: 700px;
+  background: white;
+  border: 1px solid rgb(82, 79, 79);
+  height: 200px;
+
+  & .inputs-container {
+    width: 60%;
+  }
+
+  & .bidding-btn {
+    // display: block;
     float: right;
-    width: 700px;
-  
-    & .inputs-container {
-      width: 60%;
-    }
-    
-    
-    & .btn {
-      display: block;
-      float: right;
-    }
+    z-index: 0;
   }
-  
+}

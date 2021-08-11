@@ -9,21 +9,15 @@
   z-index: 100;
   justify-content: center;
   justify-items: center;
-
   box-shadow: 2px 2px 2px 2px rgba(64, 64, 66, 0.308);
   border-radius: 20px;
 
-  & .nav-item .nav-link {
+    & .nav-item .nav-link {
     color: $primary-color;
-  }
-
-  .menu m-auto .navbar-nav {
-    justify-items: right !important;
   }
 
   & img {
     width: 150px;
-    // margin-left:10px;
   }
 
   & .menu .m-auto {

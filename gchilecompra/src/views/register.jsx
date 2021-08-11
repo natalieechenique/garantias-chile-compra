@@ -9,11 +9,11 @@ function Register() {
         <div className='register container'>
             <div className='row'>
 
-                <div className='col-sm-12 col-md-6 col-lg-6'>
+                <div className='form-container col-sm-12 col-md-6 col-lg-6'>
                     <RegisterForm />
                 </div>
 
-                <div className='col-sm-12 col-md-6 col-lg-6'>
+                <div className='image-container col-sm-12 col-md-6 col-lg-6'>
 
                     <div className='signup-text mt-5'>
                         <h2>¡Bienvenido! <br /> Te tenemos todo preparado</h2>

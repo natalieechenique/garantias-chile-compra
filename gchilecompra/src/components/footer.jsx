@@ -24,7 +24,7 @@ function Footer() {
                 <p><a href="#!" className="text-reset">¿Quiénes somos?</a></p>
                 <p><a href="#!" className="text-reset">¿Cómo operamos?</a></p>
                 <p><a href="#!" className="text-reset">Producto</a></p>
-                <p><a href="#!" className="text-reset">FAQ's</a></p>
+                <p><a href="/faqs" className="text-reset">FAQ's</a></p>
                 <p><a href="#!" className="text-reset">Nuestras empresas</a></p>
               </div>
               {/* <!-- Grid column -->

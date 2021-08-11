@@ -5,23 +5,26 @@
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  // align-items: center;
   height: 100vh;
   margin-top: 30px;
-}
 
-.form {
+  & h2, h5 {
+    color: $blue-dark-color;
+    padding-top: 30px;
+  }
+
+& .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  // align-items: center;
-  width: 84%;
+  width: 86%;
   min-height: 500px;
   background: $bg-color;
-  // margin-right: 50px;
   padding: 30px;
   border-radius: 50px;
+  margin-top: 100px;
+  box-shadow: 2px 2px 2px 2px rgba(91, 91, 93, 0.308);
 
   & .form-title {
     display: inline;
@@ -34,9 +37,10 @@
   & label {
     font-size: 14px;
     text-align: left;
+    margin-bottom: 0px;
   }
 
-  input.form-control {
+  & input .form-control {
     border-radius: 5px;
     background: $light-color;
     font-size: 14px;
@@ -44,38 +48,29 @@
     padding: 12px;
   }
 
-  // .registericon {
-  //     display: inline;
-  // }
-
-  // &.go {
-  //     // display: flex;
-  //     // flex-direction: column;
-  //     // align-items: center;
-  //     // align-items: center;
-  //     // justify-items: center;
-  //     // justify-content: center;
-
-  // }
-
-  &.btn3 {
-    // align-items: center;
-    // display: flex;
+  & .btn3 {
     text-align: center;
-    background: $secondary-color;
-    color: $bg-color;
+    background: transparent;
+    color: #304F97;
     margin: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    border-color: #6f91e0;
   }
+
+  & .signin a {
+    text-align: center;
+    color: #6C63FF;
+  }
+
 }
 
-// button.btn.send {
-// display: flex;
-// z-index: 80;
-// align-items: center;
-//  align-content: center;
-//  justify-items: center;
-//   justify-content: center;
-// }
+  & .image-container img {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 100px;
+  }
+
 
 .go {
   display: flex;
@@ -85,6 +80,10 @@
   align-items: center;
 }
 
-.btn {
+.btn.send {
   z-index: 0;
+  background: $primary-color;
+ min-width: min-content;
+}
+
 }
