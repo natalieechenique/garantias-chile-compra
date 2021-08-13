@@ -15,11 +15,11 @@ import empresa7 from '../../images/empresa7.png';
 const Partners = () => {
     return (
 
-        <div className='partners bg4-container container-fluid mt-5'>
+        <div className='partners bg4-container-fluid mt-5'>
 
             <div className='safe'>
-                <h3>Tu proyecto respaldado</h3>
-                <div className='safe-text'>
+                <h3 className='partners-title'>Tu proyecto respaldado</h3>
+                <div className='partners safe-text '>
                     {/* <div className='row'> */}
                         <div className=''>
                             <div className='empresas'>

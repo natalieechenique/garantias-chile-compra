@@ -1,20 +1,23 @@
 @use '_variables' as *;
 
-div .footer {
-  position: block;
-  bottom: 0;
+.footer {
+  background-image: url('../images/bg5.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  // background-position:  0  0;
+  background-size: cover;
   width: 100%;
-  background: $primary-color;
-  margin-top: auto;
-
-  & h6 {
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 3px;
-  }
+  left: 0;
+  right: 0;
+  height: 500px;
+  // z-index: 0;
+  overflow: hidden;
 }
+
+.text-footer {
+  margin-top: 100px;
+}
+
 
 .footer a,
 p {
@@ -36,8 +39,6 @@ p {
 // TOGGLE FAQS General
 
 .faqs {
-
-
 & toggle-body {
   color: #707070;
   background: white;
@@ -72,6 +73,7 @@ p {
     }
   }
 }
+
 /* Accordion styles */
 & .tabs {
   border-radius: 8px;

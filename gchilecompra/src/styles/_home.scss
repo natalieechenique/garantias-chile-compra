@@ -207,37 +207,6 @@
   }
 }
 
-.bg4-container {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 510px;
-  background-image: url(../images/bg4.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0 auto;
-  margin-bottom: 100px;
-
-  & h3 {
-    color: $bg-color;
-    margin-top: 50px;
-  }
-  .nav-link button.btn {
-    text-align: center;
-  }
-}
-
-.safe {
-  justify-content: center;
-  justify-items: center;
-}
-
-.safe-text {
-  justify-content: center;
-  justify-items: center;
-  margin: 0 auto;
-}
 
 // SEGURIDAD TEXTO
 .safe-text.container {
@@ -314,7 +283,6 @@
     font-weight: bold;
     width: 100px;
   }
-
 }
 
 .banner__title {

@@ -1,8 +1,41 @@
 @use '_variables' as *;
 
+.bg4-container-fluid {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 650px;
+  background-image: url(../images/bg4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  & .partners-title {
+    color: $bg-color;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  & .nav-link button.btn {
+    text-align: center;
+  }
+
+
+& .safe {
+  justify-content: center;
+  justify-items: center;
+}
+
+& .safe-text {
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+}
+
 .empresas {
-    // display: flex;
-    // flex-direction: row;
     text-align: center;
     justify-content: center;
     justify-items: center;
@@ -14,12 +47,6 @@
       justify-items: center;
       margin: 0 auto;
     }
-  }
-  
-  .safe-text {
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
   }
   
   .empresa {
@@ -37,4 +64,3 @@
     width: 200px;
     padding-bottom: 30px;
   }
-

@@ -8,15 +8,16 @@ function Footer() {
 
   return (
 
-    <div className="footer-container mb-0">
-      {/* <img src={bg5} alt="Footer Background" weight='100%' height='300px' mb-0 /> */}
-      <section class="footer text-center text-lg-start">
+    <div className="footer">
+      {/* <img src={bg5} alt="Footer Background" /> */}
 
+      <section className="footer text-center text-lg-start">
+        
         <div className="footer d-flex justify-content-center justify-content-lg-between">
 
           <div className="container text-center text-md-start mt-5">
             {/* <!-- Grid row --> */}
-            <div className="row mt-4">
+            <div className="text-footer row mt-4">
               {/* <!-- Grid column --> */}
               <div className="fw-bold col-xs-4 mb-4 col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
                 {/* <!-- Content --> */}
