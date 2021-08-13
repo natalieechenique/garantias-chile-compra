@@ -49,7 +49,7 @@ function Footer() {
                 </span>
               </div>
               {/* <!-- Grid column --> */}
-            </div>
+           
 
 
             <div className='footer2 d-flex justify-content-center justify-content-lg-between'>
@@ -58,7 +58,7 @@ function Footer() {
                   <a className="fw-bold" href="https://designseo.cl/"> ©DesignSeo 2021</a>
                 </div>
               </section>
-
+              </div>
             </div>
           </div>  {/* <!-- Grid row --> */}
           {/* <!-- Grid row --> */}
